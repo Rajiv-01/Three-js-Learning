@@ -6,9 +6,55 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fafafa;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    button {
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid white;
+      background-color: transparent;
+      color: white;
+      transition: 0.5s ease;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
 </head>
 
-<body style="box-sizing: border-box; margin: 0; padding: 0">
+<body>
+  <div class="absolute text-white text-center">
+    <h1>Three Js Plane Example</h1>
+    <h2>In this tutorial i learn about how to dynamically create the three Js Plane
+      and how to use it in the Vite App.</h2>
+    <h2>We can change the properties of the three Js Plane with the help of set attributes.</h2>
+
+    <button>Totally Done</button>
+  </div>
 
   <script type="module" src="/main.js"></script>
 </body>

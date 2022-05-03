@@ -73,6 +73,13 @@ renderer.setSize(innerWidth, innerHeight);
 renderer.setPixelRatio(devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
+// auto set the dimension of the canvas
+window.addEventListener('resize', () => {
+	renderer.setSize(innerWidth, innerHeight);
+	camera.aspect = innerWidth / innerHeight;
+	camera.updateProjectionMatrix();
+});
+
 new OrbitControls(camera, renderer.domElement);
 camera.position.z = 50;
 
